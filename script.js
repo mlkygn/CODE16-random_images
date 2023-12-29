@@ -10,9 +10,3 @@ const getImages = () => {
 };
 
 getImages();
-
-document.querySelectorAll("img").forEach(function (elem) {
-  elem.addEventListener("click", function (e) {
-    document.getElementById("imagepreview").setAttribute("src", e.currentTarget.getAttribute("src")); // here asign the image to the modal when the user click the enlarge link
-  });
-});
